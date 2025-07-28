@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 35cm;
+        margin:1cm 1cm 1cm 1cm;
+    }
+    header{
+        background-image: url(./2-2-2-2foodgroups_vegetables_detailfeature.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        backdrop-filter: blur(2px);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+    }
+    header p{
+        font-size: 50px;
+        padding-left:-100px ;
+        color: white;
+        font-weight: 700;
+    }
+    header input{
+        height: 1cm;
+        width: 8cm;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        border-radius: 6px;
+    }
+    .linker{
+        display: flex;
+        column-gap: 20px;
+    }
+    header .linker a{
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    header .linker a:hover{
+        color: purple;
+        transition: 200ms;
+        transform: scale(1.1);
+    }
+    content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        row-gap: 20px;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 1cm;
+        column-gap: 20px;
+        width: 15cm;
+    }
+    content .item1 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item1 p{
+        font-size: 20px;
+    }
+    content .item1:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item1 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item1 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item2 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item2 p{
+        font-size: 20px;
+    }
+    content .item2:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item2 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item2 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item3 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item3 p{
+        font-size: 20px;
+    }
+    content .item3:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item3 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item3 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item4 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item4 p{
+        font-size: 20px;
+    }
+    content .item4:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item4 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item4 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item5 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item5 p{
+        font-size: 20px;
+    }
+    content .item5:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item5 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item5 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item6 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item6 p{
+        font-size: 20px;
+    }
+    content .item6:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item6 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item6 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item7 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item7{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item7 p{
+        font-size: 20px;
+    }
+    content .item7:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item7 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item7 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item8 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item8{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item8 p{
+        font-size: 20px;
+    }
+    content .item8:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item8 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item8 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item9 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item9{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item9 p{
+        font-size: 20px;
+    }
+    content .item9:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item9 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item9 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    /*  */
+    content .item10 img{
+        margin-top: 10px;
+        height: 6cm;
+        width: 6cm;
+        object-fit: cover;
+    }
+    content .item10{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        height: 11cm;
+        width: 6.5cm;
+        border-radius: 8px;
+    }
+    content .item10 p{
+        font-size: 20px;
+    }
+    content .item10:hover{
+        box-shadow: 0 0 10px 5px black;
+    }
+    content .item10 img:hover{
+        transform: scale(1.06);
+        overflow-y: hidden;
+    }
+    content .item10 button{
+        height: .5cm;
+        width: 2cm;
+    }
+    footer{
+        margin-top: 1cm;
+        height: 6cm;
+        width: 35cm;
+        background-image: url(./2-2-2-2foodgroups_vegetables_detailfeature.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    footer input{
+        display: flex;
+        flex-direction: column;
+        height: 1cm;
+        width: 8cm;
+        text-align: center;
+        border-radius: 10px;
+        outline: none;
+        margin-top: 10px;
+        border: 1px solid black;
+    }
+    footer button{
+        position:absolute;
+        margin-left: 15cm;
+        margin-top: -3cm;
+        height: 1cm;
+        width: 5cm;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+    footer button:hover{
+        box-shadow: 0 0 10px 5px yellow;
+        cursor: pointer;
+    }
+    footer p{
+    position: absolute;
+        color: white;
+        font-size: 40px;
+        margin-top: -1cm;
+        margin-left: 20cm;
+    }
+</style>
+<body>
+    <header>
+        <p>Title market</p>
+        <input type="text" placeholder="Search..." />
+        <div class="linker">
+            <a href="../index.html">Home</a>
+            <a href="#">About</a>
+            <a href="../fruits/friuts.html">Fruits</a>
+            <a href="#">More</a>
+        </div>
+    </header>
+    <content>
+        <div class="item1">
+            <img src="./360_F_109603745_Dvrk4jcCYvvT0cHJDg6QkPErGvKkqRKt.jpg">
+            <h3>POTATO</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item2">
+            <img src="./360_F_246889147_5uZ4KWxKYPtFlPVHDJcrgwtHQ5UAJfkF.jpg">
+            <h3>BRINJAL</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item3">
+            <img src="./360_F_365412893_2E5WkhmKduS6lVIEaso6a7SjnW0Tqikj.jpg">
+            <h3>DRUM STICK</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item4">
+            <img src="./bitter-gourd-6534410_1280.jpg">
+            <h3>Bitter Gourd</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item5">
+            <img src="./Fresh_orange_carrots.jpg">
+            <h3>Carrot</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item6">
+            <img src="./istockphoto-1412931086-612x612.jpg">
+            <h3>Beans</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item7">
+            <img src="./istockphoto-859091002-612x612.jpg" >
+            <h3>Beetroot</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item8">
+            <img src="./garlic.jpg">
+            <h3>Garlic</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item9">
+            <img src="./ginger.jpg">
+            <H3>Ginger</H3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+        <div class="item10">
+            <img src="./mint.jpg">
+            <h3>Mint</h3>
+            <img src="../IMG_20250306_125457.png" style="height: 3cm; width: 3cm;"/>
+        </div>
+    </content>
+    <footer>
+        <div class="container">
+            <input type="text" placeholder="Name" />
+            <input type="number" placeholder="Phno Number" />
+            <input type="text" placeholder="street no" />
+            <input type="text" placeholder="landmark, city" />
+        </div>
+        <button>Place Order</button>
+        <p>Thank you for visiting us..!</p>
+    </footer>
+</body>
+</html>

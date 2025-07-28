@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./Farm-tractor-pesticides-crops.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 10cm;
+            width: 10cm;
+            row-gap: 20px;
+            backdrop-filter: blur(3px);
+            border: 2px solid white;
+            border-radius: 8px;
+            margin-left: 4cm;
+            margin-top: 1cm;
+        }
+        input{
+            height:1cm;
+            width: 8cm;
+            text-align: center;
+            border: none;
+            outline:none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        input:hover{
+            box-shadow: 0 0 12px 5px black;
+            transition: 500ms;
+        }
+        button{
+            margin-top: -50px;
+            height:1cm;
+            width: 4cm;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            box-shadow: 0 0 10px 5px lightgreen;
+            cursor: pointer;
+            transition: 500ms;
+        }
+        p{
+            color:orange;
+            font-weight: 200;
+            font-size: 24px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .home{
+            margin-left: 20cm;
+        }  
+        .container p{
+            color:white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Welcome to farmers Log-In page.</p>
+    <div class="container">
+        <input type="number" placeholder="Adhar Number" id="adhar"/>
+        <input type="text" placeholder="Enter Name" id="name"/>
+        <input type="number" placeholder="Phone Number" id="phno"/>
+        <input type="number" placeholder="Enter Patta" id="patta"/>
+        <p id="verify-text"></p>
+        <br />
+        <button onclick="verfiy()"><a href="./farmerPage.html">Log-In</a></button>
+    </div>
+
+</body>
+<script>
+    function verfiy(){
+        let text = document.getElementById("verify-text");
+        text.innerText="Your data is verifying, Please wait some time.."
+        let name = document.getElementById("name").value;
+        let adhar = document.getElementById("adhar").value;
+        let phno = document.getElementById("phno").value;
+        let patta = document.getElementById("patta").value;
+        console.log("Name : "+ name)
+        console.log("Adhar Number : "+adhar)
+        console.log("Phone Number : "+phno)
+        console.log("Patta Number : "+patta)
+    }
+</script>
+</html>
